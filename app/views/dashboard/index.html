@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="medium-8 columns">
+    <header>
+      <h1>Hello <small><%= current_user.email %></small></h1>
+      <h2>This is Rails <%= Rails.version %> </h2>
+    </header>
+
+    <section>
+      <p>
+        This will be the dashboard view!
+      </p>
+      <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+    </section>
+  </div>
+</div>
